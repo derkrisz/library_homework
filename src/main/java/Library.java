@@ -7,4 +7,8 @@ public class Library {
     public Library(){
         this.stock = new ArrayList<>();
     }
+
+    public int stockCount() {
+        return this.stock.size();
+    }
 }
