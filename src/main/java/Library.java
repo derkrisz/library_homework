@@ -11,4 +11,8 @@ public class Library {
     public int stockCount() {
         return this.stock.size();
     }
+
+    public void addBook(Book book) {
+        this.stock.add(book);
+    }
 }

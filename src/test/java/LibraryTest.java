@@ -18,4 +18,10 @@ public class LibraryTest {
     public void stockIsEmpty(){
         assertEquals(0, library.stockCount());
     }
+
+    @Test
+    public void addToStock(){
+        library.addBook(book);
+        assertEquals(1, library.stockCount());
+    }
 }
