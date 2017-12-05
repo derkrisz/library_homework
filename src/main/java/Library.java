@@ -15,4 +15,8 @@ public class Library {
     public void addBook(Book book) {
         this.stock.add(book);
     }
+
+    public void clearStock() {
+        stock.clear();
+    }
 }
