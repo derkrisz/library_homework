@@ -32,4 +32,13 @@ public class LibraryTest {
         library.clearStock();
         assertEquals(0, library.stockCount());
     }
+
+    @Test
+    public void stockIsFull(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(3, library.stockCount());
+    }
 }
