@@ -25,4 +25,9 @@ public class Library {
     public void clearStock() {
         stock.clear();
     }
+
+    public void pickUp(Publisher published) {
+        Book book = published.removeBook();
+        addBook(book);
+    }
 }
